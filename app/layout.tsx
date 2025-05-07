@@ -15,6 +15,9 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: WEB_TITLE,
   description: WEB_DESCRIPTION,
+  icons: {
+    icon: '/favicon.ico',
+  },
 }
 
 const geist = Geist({
