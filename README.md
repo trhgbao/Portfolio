@@ -17,23 +17,126 @@ Live demo: [https://nim-fawn.vercel.app](https://nim-fawn.vercel.app)
 For detailed setup instructions, refer to the [Installation Guide](./INSTALLATION.md).
 
 ```bash
-git clone https://github.com/ibelick/nim.git
-cd nim
+git clone <current-repo-url>
+cd <folder-name>
 npm install
 npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+### Customization
+#### Basic Info
+Edit the `app/data.ts` file to customize your personal information. Update the these contants with your name, title, and description.
+
+```ts
+export const EMAIL = 'my@email.com'
+
+export const WEB_TITLE = 'Name - Personal Website'
+export const WEB_DESCRIPTION =
+  'A personal website showcasing my work and projects.'
+export const FOOTER_COPYRIGHT = '© 2025 Nguyen Van B.'
+export const FOOTER_LINK = 'https://github.com/username/'
+
+export const NAME = 'Nguyen Van B'
+export const JOB_TITLE = 'NASA Frontend Intern'
+export const DESCRIPTION =
+  'Focused on creating intuitive and performant web experiences. Bridging the gap between design and development and beyond.'
+```
+
+#### Social Links
+Edit the `app/data.ts` file to customize your social links. Update the `SOCIAL_LINKS` array with your social media profiles.
+
+```ts
+export const SOCIAL_LINKS: SocialLink[] = [
+  {
+    ...
+  },
+  {
+    label: 'LinkedIn',
+    link: 'https://www.linkedin.com/in/username/',
+  },
+]
+```
+
+#### Project Showcase
+Edit the `app/data.ts` file to customize your projects. Update the `PROJECTS` array with your project details.
+
+```ts
+export const PROJECTS: Project[] = [
+  {
+    ...
+  },
+  {
+    ...
+  },
+  { // If the source end with .mp4, it will be treated as a video, otherwise as an image
+    name: 'Another Project',
+    description: 'A project description goes here.',
+    link: 'https://github.com/username/project-name',
+    video: "https://raw.githubusercontent.com/ibelick/nim/refs/heads/main/public/cover.jpg",
+    id: 'project3',
+  },
+]
+```
+
+#### Work Experience
+Edit the `app/data.ts` file to customize your work experience. Update the `WORK_EXPERIENCE` array with your work history.
+
+```ts
+export const WORK_EXPERIENCE: WorkExperience[] = [
+  {
+    ...
+  },
+  {
+    company: 'NASA',
+    title: 'Intern',
+    start: '2025',
+    end: 'Present',
+    link: 'https://www.nasa.gov/careers/',
+    id: 'work4',
+  }
+]
+```
+
+#### Add Blog Posts
+Use markdown to write your blog posts. Create a new file in the `app/blog` directory with the `.mdx` extension. For example, create `app/blog/my-first-post.mdx` and add your content.
+```md
+<!-- app/blog/my-first-blog/page.mdx -->
+<!-- Optional Cover component -->
+<Cover 
+  src="https://cdn.pixabay.com/animation/2024/05/02/07/43/07-43-00-535_512.gif"
+  alt="Image from pixabay.com"
+  caption="Wow, confetti"
+/> 
+
+# My First Post
+This is my first blog post using MDX.
+```
+
+For the frontend to know about your new blog post, you need to add it to the `app/data.ts` file.
+```ts
+// app/data.ts
+export const BLOG_POSTS: BlogPost[] = [
+  {
+    ...
+  },
+  {
+    title: 'My first blog - A journey on how I got here',
+    description: 'A short description of me using MDX and Next.js.',
+    link: '/blog/my-first-blog',
+    uid: 'blog-2',
+  },
+]
+```
 ## Contributing
 
+This portfolio template is a forked version of [nim](https://github.com/ibelick/nim).
 Contributions are welcome! Feel free to open issues or submit pull requests to improve Nim.
 
 ## Deployment
 
-You can deploy your site to any hosting platform that supports Next.js. For the easiest deployment experience, consider using Vercel:
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fibelick%2Fnim&env=NEXT_PUBLIC_SITE_URL&project-name=nim&repository-name=nim&redirect-url=https%3A%2F%2Ftwitter.com%2Fibelick&demo-title=Nim&demo-description=Nim%20is%20a%20free%20and%20open-source%20minimal%20personal%20website%20template%20built%20with%20Next.js%2015%2C%20React%2019%2C%20and%20Motion-Primitives.&demo-url=https%3A%2F%2Fnim.vercel.app&demo-image=https%3A%2F%2Fraw.githubusercontent.com%2Fibelick%2Fnim%2Frefs%2Fheads%2Fmain%2F.github%2Fassets%2Freadme.png&teamSlug=ibelick)
+You can deploy your site to any hosting platform that supports Next.js.
 
 ## About
 

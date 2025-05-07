@@ -17,6 +17,7 @@ import {
   WORK_EXPERIENCE,
   BLOG_POSTS,
   EMAIL,
+  DESCRIPTION,
   SOCIAL_LINKS,
 } from './data'
 
@@ -40,7 +41,7 @@ const TRANSITION_SECTION = {
 }
 
 type ProjectVideoProps = {
-  src: string
+  src?: string
 }
 
 function ProjectVideo({ src }: ProjectVideoProps) {
@@ -53,23 +54,39 @@ function ProjectVideo({ src }: ProjectVideoProps) {
       }}
     >
       <MorphingDialogTrigger>
-        <video
-          src={src}
-          autoPlay
-          loop
-          muted
-          className="aspect-video w-full cursor-zoom-in rounded-xl"
-        />
-      </MorphingDialogTrigger>
-      <MorphingDialogContainer>
-        <MorphingDialogContent className="relative aspect-video rounded-2xl bg-zinc-50 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950 dark:ring-zinc-800/50">
+        {src?.endsWith('.mp4') ? (
           <video
             src={src}
             autoPlay
             loop
             muted
-            className="aspect-video h-[50vh] w-full rounded-xl md:h-[70vh]"
+            className="aspect-video w-full cursor-zoom-in rounded-xl"
           />
+        ) : (
+          <img
+            src={src}
+            alt="Project image"
+            className="aspect-video w-full cursor-zoom-in rounded-xl object-cover"
+          />
+        )}
+      </MorphingDialogTrigger>
+      <MorphingDialogContainer>
+        <MorphingDialogContent className="relative aspect-video rounded-2xl bg-zinc-50 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950 dark:ring-zinc-800/50">
+          {src?.endsWith('.mp4') ? (
+            <video
+              src={src}
+              autoPlay
+              loop
+              muted
+              className="aspect-video h-[50vh] w-full rounded-xl md:h-[70vh]"
+            />
+          ) : (
+            <img
+              src={src}
+              alt="Project image"
+              className="aspect-video h-[50vh] w-full rounded-xl object-cover md:h-[70vh]"
+            />
+          )}
         </MorphingDialogContent>
         <MorphingDialogClose
           className="fixed top-6 right-6 h-fit w-fit rounded-full bg-white p-1"
@@ -136,10 +153,7 @@ export default function Personal() {
         transition={TRANSITION_SECTION}
       >
         <div className="flex-1">
-          <p className="text-zinc-600 dark:text-zinc-400">
-            Focused on creating intuitive and performant web experiences.
-            Bridging the gap between design and development.
-          </p>
+          <p className="text-zinc-600 dark:text-zinc-400">{DESCRIPTION}</p>
         </div>
       </motion.section>
 
@@ -178,13 +192,13 @@ export default function Personal() {
       >
         <h3 className="mb-5 text-lg font-medium">Work Experience</h3>
         <div className="flex flex-col space-y-2">
-          {WORK_EXPERIENCE.map((job) => (
+          {WORK_EXPERIENCE.map((job, index) => (
             <a
               className="relative overflow-hidden rounded-2xl bg-zinc-300/30 p-[1px] dark:bg-zinc-600/30"
               href={job.link}
               target="_blank"
               rel="noopener noreferrer"
-              key={job.id}
+              key={index}
             >
               <Spotlight
                 className="from-zinc-900 via-zinc-800 to-zinc-700 blur-2xl dark:from-zinc-100 dark:via-zinc-200 dark:to-zinc-50"
@@ -225,7 +239,7 @@ export default function Personal() {
               duration: 0.2,
             }}
           >
-            {BLOG_POSTS.map((post) => (
+            {BLOG_POSTS.map((post, index) => (
               <Link
                 key={post.uid}
                 className="-mx-3 rounded-xl px-3 py-3"
