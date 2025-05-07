@@ -27,7 +27,7 @@ type SocialLink = {
   link: string
 }
 
-export const EMAIL = 'my@email.com'
+export const EMAIL = ''
 
 export const WEB_TITLE = 'Name - Personal Website'
 export const WEB_DESCRIPTION =
