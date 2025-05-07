@@ -100,7 +100,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 ```
 
 #### Add Blog Posts
-Use markdown to write your blog posts. Create a new file in the `app/blog` directory with the `.mdx` extension. For example, create `app/blog/my-first-post.mdx` and add your content.
+Use markdown to write your blog posts. Create a new file in the `app/blog` directory with the `.mdx` extension. For example, create `app/blog/my-first-blog.mdx` and add your content.
 ```md
 <!-- app/blog/my-first-blog/page.mdx -->
 <!-- Optional Cover component -->
