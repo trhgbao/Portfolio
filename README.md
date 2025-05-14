@@ -1,6 +1,6 @@
-<img src="/public/cover.jpg" alt="Cover image representing Nim, a personal website template" width="100%" />
+<img src="public/image.png" alt="Cover image representing Nim, a personal website template" width="100%" />
 
-This is a personal website template, opinionatedly customized based on Nim.
+This is a personal website template, opinionatedly customized based on [Nim](https://github.com/ibelick/nim).
 
 Nim is a free and open-source personal website template built with Next.js 15, React 19, Tailwind CSS v4, and Motion. Designed for developers, designers, and founders, it combines minimalism with delightful animated components powered by [Motion-Primitives](https://motion-primitives.com).
 
@@ -43,7 +43,7 @@ export const FOOTER_LINK = 'https://github.com/username/'
 export const NAME = 'Nguyen Van B'
 export const JOB_TITLE = 'NASA Frontend Intern'
 export const DESCRIPTION =
-  'Focused on creating intuitive and performant web experiences. Bridging the gap between design and development and beyond.'
+  'I am a passionate designer and developer with a focus on creating beautiful and functional user interfaces.'
 ```
 
 #### Social Links
