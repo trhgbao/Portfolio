@@ -1,6 +1,6 @@
 <img src="public/image.png" alt="Cover image representing Nim, a personal website template" width="100%" />
 
-This is a personal website template, opinionatedly customized based on [Nim](https://github.com/ibelick/nim).
+A personal website template, opinionatedly customized based on [Nim](https://github.com/ibelick/nim).
 
 Nim is a free and open-source personal website template built with Next.js 15, React 19, Tailwind CSS v4, and Motion. Designed for developers, designers, and founders, it combines minimalism with delightful animated components powered by [Motion-Primitives](https://motion-primitives.com).
 
@@ -16,7 +16,7 @@ Live demo: [https://nim-fawn.vercel.app](https://nim-fawn.vercel.app)
 
 ## Getting Started
 
-For detailed setup instructions, refer to the [Installation Guide](./INSTALLATION.md).
+For detailed setup instructions, refer to the [Installation Guide](./INSTALLATION.md) or the below.
 
 ```bash
 git clone <current-repo-url>
@@ -43,7 +43,7 @@ export const FOOTER_LINK = 'https://github.com/username/'
 export const NAME = 'Nguyen Van B'
 export const JOB_TITLE = 'NASA Frontend Intern'
 export const DESCRIPTION =
-  'I am a passionate designer and developer with a focus on creating beautiful and functional user interfaces.'
+  'I am a passionate developer with a focus on creating beautiful and functional user interfaces.'
 ```
 
 #### Social Links
@@ -138,7 +138,7 @@ Contributions are welcome! Feel free to open issues or submit pull requests to i
 
 ## Deployment
 
-You can deploy your site to any hosting platform that supports Next.js.
+You can deploy your site to any hosting platform that supports Next.js or build it and serve it as regular static files.
 
 ## About
 
