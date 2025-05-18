@@ -101,4 +101,12 @@ export const SOCIAL_LINKS: SocialLink[] = [
     label: 'GitHub',
     link: 'https://github.com/github',
   },
+    {
+    label: 'Facebook',
+    link: 'https://github.com/github',
+  },
+    {
+    label: 'GitHub',
+    link: 'https://github.com/github',
+  },
 ]
