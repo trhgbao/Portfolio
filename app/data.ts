@@ -58,7 +58,7 @@ export const PROJECTS: Project[] = [
       'https://www.youtube.com/watch?v=0Hkij4WGW3U&list=PLrsmUym_vzlWzMW7nZsP4DMGpqzE-rlGT',
     id: 'project2',
   },
-    {
+  {
     name: 'MAZE-GAME-PATH-FINDING-HCMUS',
     description: 'This is a project for the programming for AI course, technology that allows users to virtually try on clothes, accessories, and cosmetics on their computer.',
     link: 'https://github.com/trhgbao/MAZE-GAME-PATH-FINDING-HCMUS',
@@ -66,7 +66,7 @@ export const PROJECTS: Project[] = [
       'https://www.youtube.com/watch?v=Vk2KEEyeuTI&t=2s',
     id: 'project3',
   },
-      {
+  {
     name: 'EMAIL-CONTROLLING-PROJECT',
     description: 'This is a project for the Computer Networks course, which allows for the remote control of a computer running the Windows operating system by sending commands via a Gmail account.',
     link: 'https://github.com/trhgbao/EMAIL-CONTROLLING-PROJECT',
@@ -74,7 +74,7 @@ export const PROJECTS: Project[] = [
       'https://www.youtube.com/watch?v=AFb7PMyPbHU&t=193s',
     id: 'project4',
   },
-      {
+  {
     name: 'Tiki_Product_Pipeline',
     description: 'This is a project built with Python to automatically scrape detailed product information from the e-commerce website Tiki.vn. The goal of project is to collect structured data for the purpose of analysis, statistics, or storage.',
     link: 'https://github.com/trhgbao/Tiki_Product_Pipeline',
@@ -82,23 +82,13 @@ export const PROJECTS: Project[] = [
       '',
     id: 'project5',
   },
-    },
-      {
+  {
     name: 'Talent_Booking',
     description: 'Technology that allows users to virtually try on clothes, accessories, and cosmetics on their computer.',
     link: 'https://github.com/trhgbao/Talent_Booking',
     video:
-      '',
+      'TalentBook is a full-stack, two-sided marketplace that leverages the power of Next.js for server-side rendering and Supabase for its integrated database, authentication, storage, and real-time capabilities, creating a streamlined, Airbnb-like experience for booking creative talent.',
     id: 'project6',
-  },
-    },
-      {
-    name: 'MAZE-GAME-PATH-FINDING-HCMUS',
-    description: 'Technology that allows users to virtually try on clothes, accessories, and cosmetics on their computer.',
-    link: '',
-    video:
-      '',
-    id: 'project3',
   },
 ]
 
@@ -106,12 +96,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 ]
 
 export const BLOG_POSTS: BlogPost[] = [
-  {
-    title: 'Exploring the Intersection of Design, AI, and Design Engineering',
-    description: 'How AI is changing the way we design',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
-    uid: 'blog-1',
-  },
+
 ]
 
 export const SOCIAL_LINKS: SocialLink[] = [
