@@ -47,7 +47,7 @@ export const PROJECTS: Project[] = [
       'Gomuko game for project of Introduction to Information of Technology course.',
     link: 'https://github.com/trhgbao/GOMOKU-PROJECT',
     video:
-      'https://www.youtube.com/watch?v=GO8P0Tah96A,
+      'https://www.youtube.com/watch?v=GO8P0Tah96A',
     id: 'project1',
   },
   {
