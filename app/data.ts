@@ -27,7 +27,7 @@ type SocialLink = {
   link: string
 }
 
-export const EMAIL = ''
+export const EMAIL = 'abc.defg.010505@gmail.com'
 
 export const WEB_TITLE = 'Name - Personal Website'
 export const WEB_DESCRIPTION =
@@ -38,53 +38,71 @@ export const FOOTER_LINK = 'https://github.com/trhgbao/'
 export const NAME = 'Tran Hoang Gia Bao'
 export const JOB_TITLE = 'Intern'
 export const DESCRIPTION =
-  'I am a passionate designer and developer with a focus on creating beautiful and functional user interfaces. I have experience in design engineering, front-end development, and product design. I love to explore the intersection of design and technology, and I am always looking for new challenges to tackle.'
+  'I am a third-year undergraduate student at Ho Chi Minh City University of Science (HCMUS), actively seeking an internship opportunity in a corporate environment. My long-term career aspiration is to become a Data Engineer, and I am eager to apply my academic knowledge and develop practical skills in a professional setting.'
 
 export const PROJECTS: Project[] = [
   {
-    name: 'Motion Primitives Pro',
+    name: 'GOMOKU-PROJECT',
     description:
-      'Advanced components and templates to craft beautiful websites.',
-    link: 'https://pro.motion-primitives.com/',
+      'Gomuko game for project of Introduction to Information of Technology course.',
+    link: 'https://github.com/trhgbao/GOMOKU-PROJECT',
     video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/newProfileItem/d898be8a-7037-4c71-af0c-8997239b050d.mp4',
+      'https://www.youtube.com/watch?v=GO8P0Tah96A,
     id: 'project1',
   },
   {
-    name: 'Motion Primitives',
-    description: 'UI kit to make beautiful, animated interfaces.',
-    link: 'https://motion-primitives.com/',
+    name: 'Virtual Try-On',
+    description: 'This is a project for the Introduction to AI course, technology that allows users to virtually try on clothes, accessories, and cosmetics on their computer.',
+    link: '',
     video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/XSfIvT7BUWbPRXhrbLed/ee6871c9-8400-49d2-8be9-e32675eabf7e.mp4',
+      'https://www.youtube.com/watch?v=0Hkij4WGW3U&list=PLrsmUym_vzlWzMW7nZsP4DMGpqzE-rlGT',
     id: 'project2',
+  },
+    {
+    name: 'MAZE-GAME-PATH-FINDING-HCMUS',
+    description: 'This is a project for the programming for AI course, technology that allows users to virtually try on clothes, accessories, and cosmetics on their computer.',
+    link: 'https://github.com/trhgbao/MAZE-GAME-PATH-FINDING-HCMUS',
+    video:
+      'https://www.youtube.com/watch?v=Vk2KEEyeuTI&t=2s',
+    id: 'project3',
+  },
+      {
+    name: 'EMAIL-CONTROLLING-PROJECT',
+    description: 'This is a project for the Computer Networks course, which allows for the remote control of a computer running the Windows operating system by sending commands via a Gmail account.',
+    link: 'https://github.com/trhgbao/EMAIL-CONTROLLING-PROJECT',
+    video:
+      'https://www.youtube.com/watch?v=AFb7PMyPbHU&t=193s',
+    id: 'project4',
+  },
+      {
+    name: 'Tiki_Product_Pipeline',
+    description: 'This is a project built with Python to automatically scrape detailed product information from the e-commerce website Tiki.vn. The goal of project is to collect structured data for the purpose of analysis, statistics, or storage.',
+    link: 'https://github.com/trhgbao/Tiki_Product_Pipeline',
+    video:
+      '',
+    id: 'project5',
+  },
+    },
+      {
+    name: 'Talent_Booking',
+    description: 'Technology that allows users to virtually try on clothes, accessories, and cosmetics on their computer.',
+    link: 'https://github.com/trhgbao/Talent_Booking',
+    video:
+      '',
+    id: 'project6',
+  },
+    },
+      {
+    name: 'MAZE-GAME-PATH-FINDING-HCMUS',
+    description: 'Technology that allows users to virtually try on clothes, accessories, and cosmetics on their computer.',
+    link: '',
+    video:
+      '',
+    id: 'project3',
   },
 ]
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
-  {
-    company: 'Reglazed Studio',
-    title: 'CEO',
-    start: '2024',
-    end: 'Present',
-    link: 'https://ibelick.com',
-    id: 'work1',
-  },
-  {
-    company: 'Freelance',
-    title: 'Design Engineer',
-    start: '2022',
-    end: '2024',
-    link: 'https://ibelick.com',
-    id: 'work2',
-  },
-  {
-    company: 'Freelance',
-    title: 'Front-end Developer',
-    start: '2017',
-    end: 'Present',
-    link: 'https://ibelick.com',
-    id: 'work3',
-  },
 ]
 
 export const BLOG_POSTS: BlogPost[] = [
@@ -99,14 +117,14 @@ export const BLOG_POSTS: BlogPost[] = [
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     label: 'GitHub',
-    link: 'https://github.com/github',
+    link: 'https://github.com/trhgbao',
   },
     {
     label: 'Facebook',
-    link: 'https://github.com/github',
+    link: 'https://www.facebook.com/ne.bao.5851/',
   },
     {
-    label: 'GitHub',
-    link: 'https://github.com/github',
+    label: 'Youtube',
+    link: 'https://www.youtube.com/@T--TranHoangGiaBao',
   },
 ]
