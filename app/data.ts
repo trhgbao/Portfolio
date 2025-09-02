@@ -3,6 +3,7 @@ type Project = {
   description: string
   link: string
   video?: string
+  image?: string
   id: string
 }
 
@@ -43,51 +44,50 @@ export const DESCRIPTION =
 export const PROJECTS: Project[] = [
   {
     name: 'GOMOKU-PROJECT',
-    description:
-      'Gomuko game for project of Introduction to Information of Technology course.',
+    description: 'Gomuko game for project of Introduction to Information of Technology course.',
     link: 'https://github.com/trhgbao/GOMOKU-PROJECT',
-    video:
-      'https://www.youtube.com/watch?v=GO8P0Tah96A',
+    video:  'https://www.youtube.com/watch?v=GO8P0Tah96A',
+    image: 'https://img.youtube.com/vi/GO8P0Tah96A/maxresdefault.jpg',
     id: 'project1',
   },
   {
     name: 'Virtual Try-On',
     description: 'This is a project for the Introduction to AI course, technology that allows users to virtually try on clothes, accessories, and cosmetics on their computer.',
     link: '',
-    video:
-      'https://www.youtube.com/watch?v=0Hkij4WGW3U&list=PLrsmUym_vzlWzMW7nZsP4DMGpqzE-rlGT',
+    video: 'https://www.youtube.com/watch?v=0Hkij4WGW3U&list=PLrsmUym_vzlWzMW7nZsP4DMGpqzE-rlGT',
+    image: 'https://img.youtube.com/vi/0Hkij4WGW3U&list=PLrsmUym_vzlWzMW7nZsP4DMGpqzE-rlGT/maxresdefault.jpg',
     id: 'project2',
   },
   {
     name: 'MAZE-GAME-PATH-FINDING-HCMUS',
     description: 'This is a project for the programming for AI course, technology that allows users to virtually try on clothes, accessories, and cosmetics on their computer.',
     link: 'https://github.com/trhgbao/MAZE-GAME-PATH-FINDING-HCMUS',
-    video:
-      'https://www.youtube.com/watch?v=Vk2KEEyeuTI&t=2s',
+    video: 'https://www.youtube.com/watch?v=Vk2KEEyeuTI&t=2s',
+    image: 'https://img.youtube.com/vi/Vk2KEEyeuTI&t=2s/maxresdefault.jpg',
     id: 'project3',
   },
   {
     name: 'EMAIL-CONTROLLING-PROJECT',
     description: 'This is a project for the Computer Networks course, which allows for the remote control of a computer running the Windows operating system by sending commands via a Gmail account.',
     link: 'https://github.com/trhgbao/EMAIL-CONTROLLING-PROJECT',
-    video:
-      'https://www.youtube.com/watch?v=AFb7PMyPbHU&t=193s',
+    video: 'https://www.youtube.com/watch?v=AFb7PMyPbHU&t=193s',
+    image: 'https://img.youtube.com/vi/AFb7PMyPbHU&t=193s/maxresdefault.jpg',
     id: 'project4',
   },
   {
     name: 'Tiki_Product_Pipeline',
     description: 'This is a project built with Python to automatically scrape detailed product information from the e-commerce website Tiki.vn. The goal of project is to collect structured data for the purpose of analysis, statistics, or storage.',
     link: 'https://github.com/trhgbao/Tiki_Product_Pipeline',
-    video:
-      '',
+    video: '',
+    image: 'https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg',
     id: 'project5',
   },
   {
     name: 'Talent_Booking',
-    description: 'Technology that allows users to virtually try on clothes, accessories, and cosmetics on their computer.',
+    description: 'TalentBook is a full-stack, two-sided marketplace that leverages the power of Next.js for server-side rendering and Supabase for its integrated database, authentication, storage, and real-time capabilities, creating a streamlined, Airbnb-like experience for booking creative talent.',
     link: 'https://github.com/trhgbao/Talent_Booking',
-    video:
-      'TalentBook is a full-stack, two-sided marketplace that leverages the power of Next.js for server-side rendering and Supabase for its integrated database, authentication, storage, and real-time capabilities, creating a streamlined, Airbnb-like experience for booking creative talent.',
+    video: '',
+    image: 'https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg',
     id: 'project6',
   },
 ]
